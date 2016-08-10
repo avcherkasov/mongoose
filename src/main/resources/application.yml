@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: mongoose
+    description: mongoose
+---
+info:
+  version: 1.0.0-SNAPSHOT
+  responsible: Anatoly Cherkasov
+  stage: dev
+---
+endpoints:
+  health:
+    sensitive: false
+---
+server:
+  port: 8080
+---
+logging:
+  config: classpath:logback.xml
+  file: /opt/java/mongoose/logs/spring.log
+---
+mongoose:
+  name: mongoose
+# DATABASES
+#mongoose:
+#    jdbc:
+#        driver: org.postgresql.Driver
+#        url: jdbc:postgresql://127.0.0.1:5432/mongoose
+#        user: test
+#        password: test
+#        maxPoolSize: 9
+#        idleTimeout: 30000
+#        schema: public
+#    flyway:
+#        validateOnMigrate: true

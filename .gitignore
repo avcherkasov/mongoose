@@ -51,8 +51,3 @@ crashlytics-build.properties
 
 # Target folder
 target
-
-# Target ant folder
-build
-src/main/resources/
-src/test/
